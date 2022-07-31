@@ -5,17 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Intro section with dropdown navigation</title>
 </head>
 <body>
     <header class="header">
         <div class="heading">
-            <img src="./images/logo.svg" alt="" class="snap-logo">
+            <div class="logo-menu">
+                <img src="./images/logo.svg" alt="" class="snap-logo">
+                <img src="./images/icon-menu.svg" alt="" class="menu-icon">
+            </div>
+            
+            <div class="overlay hidden"></div>
+            <div class="menu hidden">
+                <img src="./images/icon-close-menu.svg" alt="" class="close-icon">
+
+                <ul class="menu-list">
+                    <li>Features <img src="./images/icon-arrow-down.svg" alt="" class="arrow-btn"></li>
+                    <li>Company <img src="./images/icon-arrow-down.svg" alt="" class="arrow-btn"></li>
+                    <li>Careers</li>
+                    <li>About</li>
+                </ul>
+
+                <div class="bttns">
+                    <button class="log-in">Login</button>
+                    <button class="register">Register</button>
+                </div>
+            </div>
         </div>
     </header>
     <main class="main">
+        <img src="./images/image-hero-mobile.png" alt="hero image" class="hero-img">
 
+        <div class="text">
+            <h1 class="heding">Make remote work</h1>
+            <p class="prgrph">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+        </div>
+
+        <button class="learn-btn">Learn more</button>
     </main>
+    <footer class="footer">
+        <ul class="link-list">
+            <li><img src="./images/client-databiz.svg" alt="" class="link"></li>
+            <li><img src="./images/client-audiophile.svg" alt="" class="link"></li>
+            <li><img src="./images/client-meet.svg" alt="" class="link"></li>
+            <li><img src="./images/client-maker.svg" alt="" class="link"></li>
+        </ul>
+    </footer>
 
     <!--J A V A S C R I P T-->
     <script src="./js/index.js"></script>
