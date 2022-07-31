@@ -87,6 +87,24 @@ body {
     border: 1px solid black;
 }
 /* - MENU BAR (END) - */
+
+/* - TOGGLE - */
+.features,
+.company {
+    display: none;
+}
+.features-nav,
+.company-nav {
+    list-style: none;
+    padding: 15px;
+    display: grid;
+    gap: 1rem;
+}
+.gap {
+    display: flex;
+    gap: 0.7rem;
+}
+/* - TOGGLE(END) - */
 .main {
     display: grid;
     gap: 1.5rem;
@@ -125,3 +143,6 @@ p {
 .link {
     width: 80px;
 }
+
+/* ANIMATION */
+
