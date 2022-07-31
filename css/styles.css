@@ -21,7 +21,9 @@ body {
 .hero-img {
     max-width: 100%;
 }
-
+.hero-desktop {
+    display: none;
+}
 .header {
     margin: 0 5vw;
 }
@@ -30,7 +32,9 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-
+.desktop {
+    display: none;
+}
 /* - MENU BAR - */
 .hidden {
     display: none;
@@ -168,5 +172,98 @@ p {
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+/* ----- MEDIA QUERY ----- */
+
+@media screen and (min-width: 1440px) {
+    .hero-img,
+    .menu-icon,
+    .snap-logo {
+        display: none;
+    }
+    .hero-desktop {
+        display: block;
+        max-width: 400px;
+    }
+    .header {
+        margin: 20px 50px;
+    }
+    .main {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10vw;
+    }
+    .text {
+        text-align: left;
+        margin: 0 100px;
+        display: grid;
+        gap: 2rem;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    p {
+        font-size: 20px;
+        line-height: 2rem;
+    }
+    .learn-btn {
+        margin: 5px 0;
+        cursor: pointer;
+    }
+    .learn-btn:hover {
+        background-color: white;
+        color: black;
+        transition: all .2s ease-out;
+    }
+    .link-list {
+        position: absolute;
+        left: 0;
+        transform: translate(250px, -70px);
+        display: flex;
+        gap: 3.5rem;
+    }
+    
+    .desktop {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu-desktop {
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+    }
+    .menu-list-desktop {
+        display: flex;
+        list-style: none;
+        gap: 3rem;
+        font-size: 15px;
+    }
+    
+    .login-desktop {
+        border: none;
+        background-color: white;
+        font-size: 15px;
+        padding: 10px 25px;
+        cursor: pointer;
+    }
+    .register-desktop {
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px 25px;
+        cursor: pointer;
+    }
+    .pointer {
+        cursor: pointer;
+        color: hsl(0, 0%, 41%);
+    }
+    .pointer:hover {
+        color: black;
+        transition: all .2s ease-out;
     }
 }

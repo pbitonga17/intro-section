@@ -28,3 +28,9 @@ arrowBtnFeatures.addEventListener('click', () => {
 arrowBtnCompany.addEventListener('click', () => {
     company.classList.toggle('company-nav')
 })
+
+
+/* MEDIA QUERY */
+
+const medQ = window.matchMedia('(min-width: 1440px)');
+
