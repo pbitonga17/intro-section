@@ -54,6 +54,8 @@ body {
     right: 0;
     font-size: 18px;
     padding: 80px 20px;
+    animation-name: RightToLeft;
+    animation-duration: 1.2s;
 }
 .close-icon {
     float: right;
@@ -99,6 +101,8 @@ body {
     padding: 15px;
     display: grid;
     gap: 1rem;
+    animation-name: topToBtom;
+    animation-duration: 1.2s;
 }
 .gap {
     display: flex;
@@ -146,3 +150,23 @@ p {
 
 /* ANIMATION */
 
+@keyframes RightToLeft {
+    0% {
+        opacity: 1;
+        transform: translateX(300px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes topToBtom {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
