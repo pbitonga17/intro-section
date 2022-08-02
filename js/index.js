@@ -30,7 +30,21 @@ arrowBtnCompany.addEventListener('click', () => {
 })
 
 
-/* MEDIA QUERY */
+/* MEDIA QUERY - DESKTOP - */
 
-const medQ = window.matchMedia('(min-width: 1440px)');
+//const medQ = window.matchMedia('(min-width: 1440px)');
 
+const desktopFeatures = document.querySelector('.arrow-btn-desk1');
+const desktopCompany = document.querySelector('.arrow-btn-desk2');
+const divFeatures = document.querySelector('.features-desktop');
+const divCompany  = document.querySelector('.company-desktop');
+
+
+desktopFeatures.addEventListener('click', () => {
+    divFeatures.classList.toggle('features-desktop-nav');
+    console.log(`hello1`)
+})
+desktopCompany.addEventListener('click', () => {
+    divCompany.classList.toggle('company-desktop-nav');
+    console.log(`hello2`)
+})
